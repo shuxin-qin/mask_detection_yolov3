@@ -34,7 +34,7 @@ You can also download the converted TensorFlow checkpoint file by me via [[Googl
 
 ### 4. Running
 
-There are some demo images and videos under the `./data/demo_data/`. You can run the demo by:
+You can run the demo by:
 
 Single image test demo:
 
