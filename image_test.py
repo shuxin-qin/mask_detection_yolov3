@@ -20,15 +20,15 @@ os.environ["CUDA_VISIBLE_DEVICES"] = '1'
 
 
 parser = argparse.ArgumentParser(description="YOLO-V3 test single image test procedure.")
-parser.add_argument("--input_image", type=str, default="./data/raccoon_dataset/images/raccoon-61.jpg",
+parser.add_argument("--input_image", type=str, default="./data/test_00003596.jpg",
                     help="The path of the input image.")
-parser.add_argument("--anchor_path", type=str, default="./data/raccoon_anchors.txt",
+parser.add_argument("--anchor_path", type=str, default="./data/face_mask_anchors.txt",
                     help="The path of the anchor txt file.")
 parser.add_argument("--new_size", nargs='*', type=int, default=[416, 416],
                     help="Resize the input image with `new_size`, size format: [width, height]")
 parser.add_argument("--letterbox_resize", type=lambda x: (str(x).lower() == 'true'), default=False,
                     help="Whether to use the letterbox resize.")
-parser.add_argument("--class_name_path", type=str, default="./data/raccoon.names",
+parser.add_argument("--class_name_path", type=str, default="./data/face_mask.names",
                     help="The path of the class names.")
 parser.add_argument("--restore_path", type=str, default="./checkpoint/model_59.ckpt",
                     help="The path of the weights to restore.")
